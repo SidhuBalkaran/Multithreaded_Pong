@@ -1,0 +1,116 @@
+\hypertarget{class_c_base4618}{}\section{C\+Base4618 Class Reference}
+\label{class_c_base4618}\index{C\+Base4618@{C\+Base4618}}
+
+
+C++ object used to hold common code used in all of the following labs for this course.  
+
+
+
+
+{\ttfamily \#include $<$C\+Base4618.\+h$>$}
+
+Inheritance diagram for C\+Base4618\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_base4618}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_base4618_ae1ac81eaa56ded6600262c361f723cb8}{update} ()
+\begin{DoxyCompactList}\small\item\em Overloaded in C\+Sketch updates the coordinates. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_base4618_a853327d563d064bb31db241861c4d291}{draw} ()
+\begin{DoxyCompactList}\small\item\em Overloaded in C\+Sketch to draw. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_base4618_a535e816d735d10d6048dd39cd893d393}{run} ()
+\begin{DoxyCompactList}\small\item\em runs update and draw in an infinite loop until a button is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_base4618_aa07dc8a46156de408c94acf90f46043a}{}\label{class_c_base4618_aa07dc8a46156de408c94acf90f46043a} 
+\hyperlink{class_c_control}{C\+Control} {\bfseries control}
+\item 
+\hypertarget{class_c_base4618_a1b925f757247b33ca2072f777f24582d}{}\label{class_c_base4618_a1b925f757247b33ca2072f777f24582d} 
+cv\+::\+Mat {\bfseries \+\_\+canvas}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C++ object used to hold common code used in all of the following labs for this course. 
+
+This class has a \hyperlink{class_c_control}{C\+Control} object and an Open cv object which are used in C\+Sketch class.\+There will also be three public methods which implement the two of which are overloaded in C\+Sketch.
+
+\begin{DoxyAuthor}{Author}
+Balkaran Sidhu 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_base4618_a853327d563d064bb31db241861c4d291}{}\label{class_c_base4618_a853327d563d064bb31db241861c4d291} 
+\index{C\+Base4618@{C\+Base4618}!draw@{draw}}
+\index{draw@{draw}!C\+Base4618@{C\+Base4618}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void C\+Base4618\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overloaded in C\+Sketch to draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N\+O\+N\+E.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing to return 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_c_pong_af43dbb61f1f1addd6920b01aeca3fa63}{C\+Pong}.
+
+\hypertarget{class_c_base4618_a535e816d735d10d6048dd39cd893d393}{}\label{class_c_base4618_a535e816d735d10d6048dd39cd893d393} 
+\index{C\+Base4618@{C\+Base4618}!run@{run}}
+\index{run@{run}!C\+Base4618@{C\+Base4618}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void C\+Base4618\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+runs update and draw in an infinite loop until a button is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N\+O\+N\+E.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to return 
+\end{DoxyReturn}
+\hypertarget{class_c_base4618_ae1ac81eaa56ded6600262c361f723cb8}{}\label{class_c_base4618_ae1ac81eaa56ded6600262c361f723cb8} 
+\index{C\+Base4618@{C\+Base4618}!update@{update}}
+\index{update@{update}!C\+Base4618@{C\+Base4618}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void C\+Base4618\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overloaded in C\+Sketch updates the coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing to return 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_c_pong_a819c9942552ff12a11be284a89e3ab12}{C\+Pong}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+Base4618.\+h\item 
+C\+Base4618.\+cpp\end{DoxyCompactItemize}

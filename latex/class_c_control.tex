@@ -1,0 +1,172 @@
+\hypertarget{class_c_control}{}\section{C\+Control Class Reference}
+\label{class_c_control}\index{C\+Control@{C\+Control}}
+
+
+C++ object used for communication with the embedded system.  
+
+
+
+
+{\ttfamily \#include $<$C\+Control.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_control_a96db7512a2239f017fc27354eb840abf}{init\+\_\+com} (int com)
+\begin{DoxyCompactList}\small\item\em Sets the desired C\+OM port. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_control_a08d481253181db60a8aec73583a1713f}{get\+\_\+data} (string mode, string type, string channel, int \&result)
+\begin{DoxyCompactList}\small\item\em Gets data on a digital or analog channel. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_control_a96b82a830c7dca2ee4fd66f5c04d0c9a}{set\+\_\+data} (string type, string channel, string val)
+\begin{DoxyCompactList}\small\item\em S\+E\+Ts data on a digital channel. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_control_acf0620145af8af25d74656b0e66e8658}{get\+\_\+analog} (int value)
+\begin{DoxyCompactList}\small\item\em Returns a percent scale value of the joystick position. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_control_afae6ad2b10c7afb9c627e7824f30ff42}{get\+\_\+button} ()
+\begin{DoxyCompactList}\small\item\em Debounces the puch button. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_control_a1a643d9630738943580882ea97e4caec}{servo} ()
+\begin{DoxyCompactList}\small\item\em Displayes servo position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_control_ace18c1c2a9b70a663bad4ede2556a788}{}\label{class_c_control_ace18c1c2a9b70a663bad4ede2556a788} 
+int \hyperlink{class_c_control_ace18c1c2a9b70a663bad4ede2556a788}{x}
+\begin{DoxyCompactList}\small\item\em X value Jo\+Y\+S\+T\+I\+CK. \end{DoxyCompactList}\item 
+\hypertarget{class_c_control_a143a30a147cb0e1487ff52a7ca1a937e}{}\label{class_c_control_a143a30a147cb0e1487ff52a7ca1a937e} 
+int \hyperlink{class_c_control_a143a30a147cb0e1487ff52a7ca1a937e}{y}
+\begin{DoxyCompactList}\small\item\em Y vakue J\+O\+Y\+S\+T\+I\+CK. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C++ object used for communication with the embedded system. 
+
+This class has a serial port object and an init\+\_\+com method which initializes the serial port to the com port passed as a parameter to the method.\+There will also be two public methods which implement the serial communication protocol
+
+\begin{DoxyAuthor}{Author}
+Balkaran Sidhu 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_control_acf0620145af8af25d74656b0e66e8658}{}\label{class_c_control_acf0620145af8af25d74656b0e66e8658} 
+\index{C\+Control@{C\+Control}!get\+\_\+analog@{get\+\_\+analog}}
+\index{get\+\_\+analog@{get\+\_\+analog}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{get\+\_\+analog()}{get\_analog()}}
+{\footnotesize\ttfamily int C\+Control\+::get\+\_\+analog (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns a percent scale value of the joystick position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & value\+:raw value of joystick.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns percent scale value. 
+\end{DoxyReturn}
+\hypertarget{class_c_control_afae6ad2b10c7afb9c627e7824f30ff42}{}\label{class_c_control_afae6ad2b10c7afb9c627e7824f30ff42} 
+\index{C\+Control@{C\+Control}!get\+\_\+button@{get\+\_\+button}}
+\index{get\+\_\+button@{get\+\_\+button}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{get\+\_\+button()}{get\_button()}}
+{\footnotesize\ttfamily int C\+Control\+::get\+\_\+button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Debounces the puch button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing to return. 
+\end{DoxyReturn}
+\hypertarget{class_c_control_a08d481253181db60a8aec73583a1713f}{}\label{class_c_control_a08d481253181db60a8aec73583a1713f} 
+\index{C\+Control@{C\+Control}!get\+\_\+data@{get\+\_\+data}}
+\index{get\+\_\+data@{get\+\_\+data}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{get\+\_\+data()}{get\_data()}}
+{\footnotesize\ttfamily bool C\+Control\+::get\+\_\+data (\begin{DoxyParamCaption}\item[{string}]{mode,  }\item[{string}]{type,  }\item[{string}]{channel,  }\item[{int \&}]{result }\end{DoxyParamCaption})}
+
+
+
+Gets data on a digital or analog channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strings} & of Mode used to select G\+ET or S\+ET. \\
+\hline
+{\em strings} & of type used to select Digital,Analog or Servo. \\
+\hline
+{\em strings} & of channel used select the the channel to read from. \\
+\hline
+{\em strings} & of result passed by referance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns T\+R\+UE or F\+A\+L\+SE 
+\end{DoxyReturn}
+\hypertarget{class_c_control_a96db7512a2239f017fc27354eb840abf}{}\label{class_c_control_a96db7512a2239f017fc27354eb840abf} 
+\index{C\+Control@{C\+Control}!init\+\_\+com@{init\+\_\+com}}
+\index{init\+\_\+com@{init\+\_\+com}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{init\+\_\+com()}{init\_com()}}
+{\footnotesize\ttfamily void C\+Control\+::init\+\_\+com (\begin{DoxyParamCaption}\item[{int}]{com }\end{DoxyParamCaption})}
+
+
+
+Sets the desired C\+OM port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C\+OM} & port string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing to return 
+\end{DoxyReturn}
+\hypertarget{class_c_control_a1a643d9630738943580882ea97e4caec}{}\label{class_c_control_a1a643d9630738943580882ea97e4caec} 
+\index{C\+Control@{C\+Control}!servo@{servo}}
+\index{servo@{servo}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{servo()}{servo()}}
+{\footnotesize\ttfamily void C\+Control\+::servo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displayes servo position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing to return. 
+\end{DoxyReturn}
+\hypertarget{class_c_control_a96b82a830c7dca2ee4fd66f5c04d0c9a}{}\label{class_c_control_a96b82a830c7dca2ee4fd66f5c04d0c9a} 
+\index{C\+Control@{C\+Control}!set\+\_\+data@{set\+\_\+data}}
+\index{set\+\_\+data@{set\+\_\+data}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{set\+\_\+data()}{set\_data()}}
+{\footnotesize\ttfamily bool C\+Control\+::set\+\_\+data (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{string}]{channel,  }\item[{string}]{val }\end{DoxyParamCaption})}
+
+
+
+S\+E\+Ts data on a digital channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strings} & of type used to select Digital,Analog or Servo. \\
+\hline
+{\em strings} & of channel used select the the channel to write to. \\
+\hline
+{\em strings} & of valued on a channel used select the the channel to write to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns T\+R\+UE or F\+A\+L\+SE 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+Control.\+h\item 
+C\+Control.\+cpp\end{DoxyCompactItemize}

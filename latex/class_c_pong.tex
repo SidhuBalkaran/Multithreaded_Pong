@@ -1,0 +1,128 @@
+\hypertarget{class_c_pong}{}\section{C\+Pong Class Reference}
+\label{class_c_pong}\index{C\+Pong@{C\+Pong}}
+
+
+C++ object used to create a Pong;.  
+
+
+
+
+{\ttfamily \#include $<$C\+Pong.\+h$>$}
+
+Inheritance diagram for C\+Pong\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_pong}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_pong_a819c9942552ff12a11be284a89e3ab12}{update} () override
+\begin{DoxyCompactList}\small\item\em G\+E\+TS J\+O\+Y\+S\+T\+I\+CK I\+N\+P\+UT. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_pong_af43dbb61f1f1addd6920b01aeca3fa63}{draw} () override
+\begin{DoxyCompactList}\small\item\em renders all the graphics on the screen. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_pong_a0fa724d6d3dc8e65decb1276a4a1c38a}{reset} ()
+\begin{DoxyCompactList}\small\item\em resets the position velocity to default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_pong_a1dae5c9ec589eb86e275a0470095f530}{}\label{class_c_pong_a1dae5c9ec589eb86e275a0470095f530} 
+int \hyperlink{class_c_pong_a1dae5c9ec589eb86e275a0470095f530}{y\+\_\+pos}
+\begin{DoxyCompactList}\small\item\em Y value Jo\+Y\+S\+T\+I\+CK. \end{DoxyCompactList}\item 
+\hypertarget{class_c_pong_a3aa66544f80bed43ebffeb3c2711521e}{}\label{class_c_pong_a3aa66544f80bed43ebffeb3c2711521e} 
+const int \hyperlink{class_c_pong_a3aa66544f80bed43ebffeb3c2711521e}{frame\+Delay} = 1000 / 26
+\begin{DoxyCompactList}\small\item\em 33ms delay \end{DoxyCompactList}\item 
+\hypertarget{class_c_pong_a460ef9c18d512e61e8b277aaf9c2db12}{}\label{class_c_pong_a460ef9c18d512e61e8b277aaf9c2db12} 
+uint32\+\_\+t \hyperlink{class_c_pong_a460ef9c18d512e61e8b277aaf9c2db12}{frame\+Start}
+\begin{DoxyCompactList}\small\item\em start time. \end{DoxyCompactList}\item 
+\hypertarget{class_c_pong_a1432a4e6bcd2cfc7eb567e9c5dc2f136}{}\label{class_c_pong_a1432a4e6bcd2cfc7eb567e9c5dc2f136} 
+double \hyperlink{class_c_pong_a1432a4e6bcd2cfc7eb567e9c5dc2f136}{last}
+\begin{DoxyCompactList}\small\item\em previous time \end{DoxyCompactList}\item 
+\hypertarget{class_c_pong_aa9bb35ee26e1722e574f8629d381445b}{}\label{class_c_pong_aa9bb35ee26e1722e574f8629d381445b} 
+int \hyperlink{class_c_pong_aa9bb35ee26e1722e574f8629d381445b}{score}
+\begin{DoxyCompactList}\small\item\em score of player \end{DoxyCompactList}\item 
+\hypertarget{class_c_pong_a2da2c577ed7dd0ecea96221c3dd4e5a4}{}\label{class_c_pong_a2da2c577ed7dd0ecea96221c3dd4e5a4} 
+int \hyperlink{class_c_pong_a2da2c577ed7dd0ecea96221c3dd4e5a4}{press}
+\begin{DoxyCompactList}\small\item\em button output value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C++ object used to create a Pong;. 
+
+This class drwas and updates the paddles on the screen Y axis input comes from the joystck.
+
+\begin{DoxyAuthor}{Author}
+Balkaran Sidhu 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_pong_af43dbb61f1f1addd6920b01aeca3fa63}{}\label{class_c_pong_af43dbb61f1f1addd6920b01aeca3fa63} 
+\index{C\+Pong@{C\+Pong}!draw@{draw}}
+\index{draw@{draw}!C\+Pong@{C\+Pong}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void C\+Pong\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+renders all the graphics on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N\+O\+N\+E.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing to return 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_c_base4618_a853327d563d064bb31db241861c4d291}{C\+Base4618}.
+
+\hypertarget{class_c_pong_a0fa724d6d3dc8e65decb1276a4a1c38a}{}\label{class_c_pong_a0fa724d6d3dc8e65decb1276a4a1c38a} 
+\index{C\+Pong@{C\+Pong}!reset@{reset}}
+\index{reset@{reset}!C\+Pong@{C\+Pong}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void C\+Pong\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+resets the position velocity to default. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N\+O\+NE} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing to return 
+\end{DoxyReturn}
+\hypertarget{class_c_pong_a819c9942552ff12a11be284a89e3ab12}{}\label{class_c_pong_a819c9942552ff12a11be284a89e3ab12} 
+\index{C\+Pong@{C\+Pong}!update@{update}}
+\index{update@{update}!C\+Pong@{C\+Pong}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void C\+Pong\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+G\+E\+TS J\+O\+Y\+S\+T\+I\+CK I\+N\+P\+UT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N\+O\+N\+E.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing to return 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_c_base4618_ae1ac81eaa56ded6600262c361f723cb8}{C\+Base4618}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+Pong.\+h\item 
+C\+Pong.\+cpp\end{DoxyCompactItemize}
